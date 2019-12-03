@@ -211,6 +211,66 @@
         height:305px;
         background-image: url(./images/s69-39961.jpg);
         margin-top: 15px;
+        position:relative;
+    }
+    .right-down-mask {
+        position: absolute;
+        width:713px;
+        height:45px;
+        bottom:0px;
+        background-color: rgb(223, 208, 208);
+        opacity: 0.9;
+    }
+    .stars {
+        height:305px;
+        width:auto;
+        background-color: teal;
+        margin:15px 40px 15px 40px;
+        display:flex;
+
+    }
+    .merger {
+        position:relative;
+        width:310px;
+        height:305px;
+        background-image: url(./images/ssc2017-14a1.jpg);
+        background-size: 200%;
+        background-repeat: no-repeat;
+        background-position-x: -120px;
+    }
+    .merger-mask {
+        position: absolute;
+        width:310px;
+        height:45px;
+        bottom:0px;
+        background-color: rgb(223, 208, 208);
+        opacity: 0.9;
+    }
+    .merger-mask:before {
+        position:absolute;
+        content:"Image of the Day";
+        width:145px;
+        height:30px;
+        background-color: rgb(88,112,157);
+        color:white;
+        padding-left:10px;
+        padding-top:5px;
+        top:-35px;
+        left:0px;
+    }
+    .asteroids {
+        position:relative;
+        width:620px;
+        height:305px;
+        background-image: url(./images/pia22556-16.gif);
+    }
+    .asteroids-mask {
+        position: absolute;
+        width:620px;
+        height:45px;
+        bottom:0px;
+        background-color: rgb(223, 208, 208);
+        opacity: 0.9;
     }
     </style>
 </head>
@@ -287,9 +347,24 @@
                 </div>
             </div>
             <div class="right-down">
-
+                <div class="right-down-mask">
+                    <p class="description3">July 16，1969：Liftoff of Apollo 11</p>
+                </div>
             </div>
         </div>
+    </div>
+    <div class="stars">
+        <div class="merger">
+            <div class="merger-mask">
+                <p>A Merger of Stars</p>
+            </div>
+        </div>
+        <div class="asteroids">
+            <div class="asteroids-mask">
+                <p>A Merger of Stars</p>
+            </div>
+        </div>
+        <div class="starvidio"></div>
     </div>
 </body>
 </html>
