@@ -7,7 +7,7 @@
     }  
     .top{
         height:152px;
-        width:1916px;
+        width:auto;
         display:flex;
     }  
     .earth{
@@ -17,6 +17,39 @@
     .logo {
         height:90px;
         padding:30px 30px 0px 60px;
+    }
+    .search {
+        width:250px;
+        height:152px;
+        position:relative;
+    }
+    .search input {
+        background-color: rgb(71, 71, 71);
+        border:none;
+        width:190px;
+        height:30px;
+        margin-top:20px;
+        color:white;
+    }
+    .search:before {
+        position: absolute;
+        content:"";
+        width:25px;
+        height:25px;
+        background-image: url(./images/search.png);
+        background-size:100% 100%;
+        left:150px;
+        top:24px;
+    }
+    .search:after {
+        position:absolute;
+        content:"";
+        width:21px;
+        height:21px;
+        background-image: url(./images/share.png);
+        background-size:100% 100%;
+        left:200px;
+        top:24px;
     }
     .menu {
         height:152px;
@@ -60,10 +93,124 @@
     .menudown-table td:last-child {
         border-right: none;
     }
-    .search {
-        background-color: teal;
-        width:250px;
-        height:152px;
+    .photolist {
+        width:auto;
+        height:640px;
+        display:flex;
+        margin-left:40px;
+    }
+    .dawn {
+        position:relative;
+        width:750px;
+        height:640px;
+        background-image: url(./images/pia21924-16.jpg);
+    }
+    .dawn-mask {
+        position:absolute;
+        bottom:0px;
+        width:695px;
+        height:40px;
+        background-color: rgb(223, 208, 208);
+        opacity: 0.9;
+        padding-bottom: 5px;
+    }
+    .description {
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+    .description:before {
+        position:absolute;
+        content:"Dawn";
+        width:65px;
+        height:30px;
+        background-color: rgb(88,112,157);
+        color:white;
+        padding-left:10px;
+        padding-top:5px;
+        top:-35px;
+        left:0px;
+    }
+    .photolist-right {
+        width:713px;
+        height:640px;
+        padding-left: 15px;
+        padding-right:40px;
+    }
+    .right-top {
+        width:713px;
+        height:320px;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .climate{
+        position:relative;
+        width:350px;
+        height:320px;
+        background-image:url(./images/mollweide_cycle.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .climate-mask {
+        position:absolute;
+        width:350px;
+        height:45px;
+        bottom:0px;
+        background-color: rgb(223, 208, 208);
+        opacity: 0.9;
+    }
+    .climate-events {
+        width:350px;
+        height:320px;
+        background-color: rgb(69,112,154);
+        position:relative;
+    }
+    .description2 {
+        margin:0;
+    }    
+    .description2:before {
+        position:absolute;
+        content:"Climate";
+        width:65px;
+        height:30px;
+        background-color: rgb(88,112,157);
+        color:white;
+        top:-30px;
+    }   
+    .climate-events .nasa-events {
+        margin-left:15px;
+        margin-bottom:5px;
+        color:white;
+    }
+    .climate-events hr {
+        width:320px;
+    }
+    .climate-events .nasa-des {
+        font-size:13px;
+        color:white;
+        padding-left:10px;
+        padding-right:10px;
+    }
+    .nasa-events-down {
+        position:absolute;
+        bottom:0px;
+        width:350px;
+        height:23px;
+        padding-left:10px;
+    }
+    .nasa-events-down hr{
+        margin:0;
+    }
+    .nasa-events-down table {
+        width:350px;
+        font-size:13px;
+        color:white;
+    }
+    .right-down {
+        width:713px;
+        height:305px;
+        background-image: url(./images/s69-39961.jpg);
+        margin-top: 15px;
     }
     </style>
 </head>
@@ -103,7 +250,45 @@
             </div>
         </div>
         <div class="search">
+            <form method="post" action="save.php">
+                <label for="username"></label>
+                <input type="text"  name="username" id="username" value=" Search"  />
+            </form>
+        </div>
+    </div>
+    <div class="photolist">
+        <div class="dawn">
+            <div class="dawn-mask">
+                <p class="description">Dusk for Dawn:Mission of Mary Firsts to Gather More Data in Home Stretch</p>
+            </div>
+        </div>
+        <div class="photolist-right">
+            <div class="right-top">
+                <div class="climate">
+                    <div class="climate-mask">
+                        <p class="description2">A Scientist's Final Paper Looks Toward Earth's Future Climate</p>
+                    </div>
+                </div>
+                <div class="climate-events">
+                    <p class="nasa-events">NASA Events</p>
+                    <hr/>
+                    <p class="nasa-des">Calling All Social Media Users! Apply to Experience the Lauch of NASA's ICESat-2</p>
+                    <p class="nasa-des">No Earliar Than Saturday,Aug.4,4 a.m. EDT:Launch of Parker Solar Probe from Cape Canaveral Air Force Station in Floria</p>
+                    <div class="nasa-events-down">
+                        <hr />
+                        <table>
+                            <tr>
+                                <td>NASA TV Schedule</td>
+                                <td></td>
+                                <td>Launches and Landings</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="right-down">
 
+            </div>
         </div>
     </div>
 </body>
