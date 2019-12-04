@@ -51,6 +51,10 @@
         left:200px;
         top:24px;
     }
+    .link {
+        text-decoration: none;
+        color:white;
+    }
     .menu {
         height:152px;
         width:1000px;
@@ -224,7 +228,6 @@
     .stars {
         height:305px;
         width:auto;
-        background-color: teal;
         margin:15px 40px 15px 40px;
         display:flex;
 
@@ -263,14 +266,21 @@
         width:620px;
         height:305px;
         background-image: url(./images/pia22556-16.gif);
+        padding-left: 15px;
     }
     .asteroids-mask {
         position: absolute;
-        width:620px;
+        width:610px;
         height:45px;
         bottom:0px;
         background-color: rgb(223, 208, 208);
         opacity: 0.9;
+    }
+    .starvideo {
+        width:500px;
+        height:305px;
+        background-color: yellow;
+        margin-left: 15px;
     }
     </style>
 </head>
@@ -283,28 +293,28 @@
             <div class="menutop">
                 <table class="menutop-table">
                     <tr>
-                        <td>Missions</td>
-                        <td>Galleries</td>
-                        <td>NASA TV</td>
-                        <td>Follw NASA</td>
-                        <td>Downloads</td>
-                        <td>About</td>
-                        <td>NASA Audiences</td>
+                        <td><a class="link" href="#">Missions</a></td>
+                        <td><a class="link" href="#">Galleries</a></td>
+                        <td><a class="link" href="#">NASA TV</a></td>
+                        <td><a class="link" href="#">Follw NASA</a></td>
+                        <td><a class="link" href="#">Downloads</a></td>
+                        <td><a class="link" href="#">About</a></td>
+                        <td><a class="link" href="#">NASA Audiences</a></td>
                     </tr>
                 </table>
             </div>
             <div class="menudown">
                 <table class="menudown-table">
                     <tr>
-                        <td>Humans in Space</td>
-                        <td>Moon to Mars</td>
-                        <td>Earth</td>
-                        <td>Space Tech</td>
-                        <td>Flight</td>
-                        <td>Solar System and Beyond</td>
-                        <td>Education</td>
-                        <td>History</td>
-                        <td>Benefits to You</td>
+                        <td><a class="link" href="#">Humans in Space</a></td>
+                        <td><a class="link" href="#">Moon to Mars</a></td>
+                        <td><a class="link" href="#">Earth</a></td>
+                        <td><a class="link" href="#">Space Tech</a></td>
+                        <td><a class="link" href="#">Flight</a></td>
+                        <td><a class="link" href="#">Solar System and Beyond</a></td>
+                        <td><a class="link" href="#">Education</a></td>
+                        <td><a class="link" href="#">History</a></td>
+                        <td><a class="link" href="#">Benefits to You</a></td>
                     </tr>
                 </table>
             </div>
@@ -312,7 +322,7 @@
         <div class="search">
             <form method="post" action="save.php">
                 <label for="username"></label>
-                <input type="text"  name="username" id="username" value=" Search"  />
+                <input type="text"  name="username" id="username" placeholder="Search" />
             </form>
         </div>
     </div>
@@ -364,7 +374,9 @@
                 <p>A Merger of Stars</p>
             </div>
         </div>
-        <div class="starvidio"></div>
+        <div class="starvideo">
+            <iframe height=305 width=487 src='http://player.youku.com/embed/XNDM1Nzk5MjU4OA==' frameborder=0 allowfullscreen></iframe>
+        </div>
     </div>
 </body>
 </html>
