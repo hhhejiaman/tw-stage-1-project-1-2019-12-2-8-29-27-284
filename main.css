@@ -1,9 +1,9 @@
-body{
+body {
     background-image: url(./images/starfield-banner.jpg);
 }  
 .allmask {
-    width:100%;
-    bottom:0px;
+    width: 100%;
+    bottom: 0px;
     background-color: rgb(223, 208, 208);
     opacity: 0.9;
 }
@@ -16,103 +16,103 @@ a {
     text-decoration: none;
     color:white;
 }
-.top{
-    height:152px;
-    width:auto;
-    display:flex;
+.top {
+    height: 152px;
+    width: auto;
+    display: flex;
 }  
-.earth{
-    width:260px;
-    height:152px;
+.earth {
+    width: 260px;
+    height: 152px;
 }
 .logo {
-    height:90px;
-    padding:30px 30px 0px 60px;
+    height: 90px;
+    padding: 30px 30px 0px 60px;
 }
 .search {
-    width:250px;
-    height:152px;
-    position:relative;
+    width: 250px;
+    height: 152px;
+    position: relative;
 }
 .search input {
     background-color: rgb(71, 71, 71);
-    border:none;
-    width:190px;
-    height:30px;
-    margin-top:20px;
-    color:white;
+    border: none;
+    width: 190px;
+    height: 30px;
+    margin-top: 20px;
+    color: white;
 }
 .search:before {
     position: absolute;
-    content:"";
-    width:25px;
-    height:25px;
+    content: "";
+    width: 25px;
+    height: 25px;
     background-image: url(./images/search.png);
-    background-size:100% 100%;
-    left:150px;
-    top:24px;
+    background-size: 100% 100%;
+    left: 150px;
+    top: 24px;
 }
 .search:after {
-    position:absolute;
-    content:"";
-    width:21px;
-    height:21px;
+    position: absolute;
+    content: "";
+    width: 21px;
+    height: 21px;
     background-image: url(./images/share.png);
-    background-size:100% 100%;
-    left:200px;
-    top:24px;
+    background-size: 100% 100%;
+    left: 200px;
+    top: 24px;
 }
 .link {
     text-decoration: none;
-    color:white;
+    color: white;
 }
 .menu {
-    height:152px;
-    width:1000px;
+    height: 152px;
+    width: 1000px;
 }
 .menutop {
-    height:80px;
-    width:860px;
-    padding-top:10px;
-    padding-left:140px;
-    color:#eaecef;
+    height: 80px;
+    width: 860px;
+    padding-top: 10px;
+    padding-left: 140px;
+    color: #eaecef;
 }
-.menutop-table{
-    border-spacing:10px;
-    font-size:20px;
+.menutop-table {
+    border-spacing: 10px;
+    font-size: 20px;
     text-align: center;
     line-height: 220%;
 }
 .menutop-table td {
     border-right: 1px solid #eaecef;
-    padding-right:10px;
+    padding-right: 10px;
 }
 .menutop-table td:last-child {
     border-right: none;
 }
 .menudown{
     background-color: rgb(85,85,85);
-    width:1000px;
-    height:50px;
-    color:white;
+    width: 1000px;
+    height: 50px;
+    color: white;
 }
 .menudown-table{
     border-spacing: 15px;
-    font-size:small;
+    font-size:  small;
     line-height: 220%;
 }
 .menudown-table td {
     border-right: 1px solid #eaecef;
-    padding-right:15px;
+    padding-right: 15px;
 }
 .menudown-table td:last-child {
     border-right: none;
 }
 .photolist {
-    width:auto;
-    height:640px;
-    display:flex;
-    margin-left:40px;
+    width: auto;
+    height: 640px;
+    display: flex;
+    margin-left: 40px;
 }
 .dawn {
     position:relative;
@@ -134,30 +134,30 @@ a {
     width: 65px;
     height: 30px;
     background-color: rgb(88,112,157);
-    color:white;
+    color: white;
     padding-left: 10px;
     padding-top: 5px;
     top: -35px;
     left: 0px;
 }
 .photolist-right {
-    width:713px;
-    height:640px;
+    width: 713px;
+    height: 640px;
     padding-left: 15px;
-    padding-right:40px;
+    padding-right: 40px;
 }
 .right-top {
-    width:713px;
-    height:320px;
-    display:flex;
+    width: 713px;
+    height: 320px;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.climate{
-    position:relative;
-    width:350px;
-    height:320px;
-    background-image:url(./images/mollweide_cycle.jpg);
+.climate {
+    position: relative;
+    width: 350px;
+    height: 320px;
+    background-image: url(./images/mollweide_cycle.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -166,59 +166,59 @@ a {
     height: 45px;
 }
 .climate-events {
-    width:350px;
-    height:320px;
+    width: 350px;
+    height: 320px;
     background-color: rgb(69,112,154);
-    position:relative;
+    position: relative;
 }
 .description2 {
     margin:2px 5px 5px 5px;
     font-weight: 600;
 }    
 .description2:before {
-    position:absolute;
-    content:"Climate";
-    width:65px;
-    height:30px;
+    position: absolute;
+    content: "Climate";
+    width: 65px;
+    height: 30px;
     background-color: rgb(88,112,157);
-    color:white;
-    top:-30px;
+    color: white;
+    top: -30px;
 }   
 .climate-events .nasa-events {
-    margin-left:15px;
-    margin-bottom:5px;
+    margin-left: 15px;
+    margin-bottom: 5px;
     color:white;
 }
 .climate-events hr {
-    width:320px;
+    width: 320px;
 }
 .climate-events .nasa-des {
-    font-size:13px;
+    font-size: 13px;
     color:white;
-    padding-left:10px;
-    padding-right:10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .nasa-events-down {
-    position:absolute;
-    bottom:0px;
-    width:350px;
-    height:23px;
-    padding-left:10px;
+    position: absolute;
+    bottom: 0px;
+    width: 350px;
+    height: 23px;
+    padding-left: 10px;
 }
 .nasa-events-down hr{
-    margin:0;
+    margin: 0;
 }
 .nasa-events-down table {
-    width:350px;
-    font-size:13px;
+    width: 350px;
+    font-size: 13px;
     color:white;
 }
 .right-down {
-    width:713px;
-    height:305px;
+    width: 713px;
+    height: 305px;
     background-image: url(./images/s69-39961.jpg);
     margin-top: 15px;
-    position:relative;
+    position: relative;
 }
 .right-down-mask {
     position: absolute;
@@ -232,9 +232,9 @@ a {
     justify-content: space-between;
 }
 .merger {
-    position:relative;
-    width:310px;
-    height:305px;
+    position: relative;
+    width: 310px;
+    height: 305px;
     background-image: url(./images/ssc2017-14a1.jpg);
     background-repeat: no-repeat;
     background-position-x: -120px;
@@ -244,16 +244,16 @@ a {
     height: 45px;
 }
 .merger-mask:before {
-    position:absolute;
-    content:"Image of the Day";
-    width:145px;
-    height:30px;
+    position: absolute;
+    content: "Image of the Day";
+    width: 145px;
+    height: 30px;
     background-color: rgb(88,112,157);
     color:white;
-    padding-left:10px;
-    padding-top:5px;
-    top:-35px;
-    left:0px;
+    padding-left: 10px;
+    padding-top: 5px;
+    top: -35px;
+    left: 0px;
 }
 .asteroids {
     position:relative;
@@ -266,35 +266,35 @@ a {
     height: 45px;
 }
 .asteroids-mask:before {
-    position:absolute;
-    content:"Asteroids";
-    width:90px;
-    height:30px;
-    padding-left:10px;
-    padding-top:5px;
+    position: absolute;
+    content: "Asteroids";
+    width: 90px;
+    height: 30px;
+    padding-left: 10px;
+    padding-top: 5px;
     background-color:  rgb(88,112,157);
     color:white;
-    top:-35px;
+    top: -35px;
 }
 .starvideo {
-    width:375px;
-    height:305px;
+    width: 375px;
+    height: 305px;
 }
 .pic-all {
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 .bottom-box {
-    height:305px;
-    width:auto;
-    margin:0px 40px 35px 40px;
-    display:flex;
+    height: 305px;
+    width: auto;
+    margin: 0px 40px 35px 40px;
+    display: flex;
     justify-content: space-between;
 }
 .about-nasa {
     position: relative;
-    height:305px;
-    width:308px;
+    height: 305px;
+    width: 308px;
     background-image: url(./images/nasa_logo.png);
     background-color: rgb(34,34,34);
 }
@@ -316,8 +316,8 @@ a {
 }
 .juno {
     position: relative;
-    width:345px;
-    height:305px;
+    width: 345px;
+    height: 305px;
     background-image: url(./images/io-home.gif);
 }
 .juno-mask {
