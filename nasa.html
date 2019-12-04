@@ -5,6 +5,21 @@
     body{
         background-image: url(./images/starfield-banner.jpg);
     }  
+    .allmask {
+        width:100%;
+        bottom:0px;
+        background-color: rgb(223, 208, 208);
+        opacity: 0.9;
+    }
+    .description-all {
+        padding-left: 10px;
+        padding-bottom: 10px;
+        font-weight: 600;
+    }
+    a {
+        text-decoration: none;
+        color:white;
+    }
     .top{
         height:152px;
         width:auto;
@@ -110,29 +125,24 @@
         background-image: url(./images/pia21924-16.jpg);
     }
     .dawn-mask {
-        position:absolute;
-        bottom:0px;
-        width:695px;
-        height:40px;
-        background-color: rgb(223, 208, 208);
-        opacity: 0.9;
+        position: absolute;
+        height: 40px;
         padding-bottom: 5px;
     }
     .description {
-        padding-left: 10px;
-        padding-bottom: 10px;
+        padding-left: 15px;
     }
     .description:before {
-        position:absolute;
-        content:"Dawn";
-        width:65px;
-        height:30px;
+        position: absolute;
+        content: "Dawn";
+        width: 65px;
+        height: 30px;
         background-color: rgb(88,112,157);
         color:white;
-        padding-left:10px;
-        padding-top:5px;
-        top:-35px;
-        left:0px;
+        padding-left: 10px;
+        padding-top: 5px;
+        top: -35px;
+        left: 0px;
     }
     .photolist-right {
         width:713px;
@@ -156,12 +166,8 @@
         background-size: 100% 100%;
     }
     .climate-mask {
-        position:absolute;
-        width:350px;
-        height:45px;
-        bottom:0px;
-        background-color: rgb(223, 208, 208);
-        opacity: 0.9;
+        position: absolute;
+        height: 45px;
     }
     .climate-events {
         width:350px;
@@ -170,7 +176,8 @@
         position:relative;
     }
     .description2 {
-        margin:0;
+        margin:2px 5px 5px 5px;
+        font-weight: 600;
     }    
     .description2:before {
         position:absolute;
@@ -219,35 +226,26 @@
     }
     .right-down-mask {
         position: absolute;
-        width:713px;
-        height:45px;
-        bottom:0px;
-        background-color: rgb(223, 208, 208);
-        opacity: 0.9;
+        height: 45px;
     }
     .stars {
-        height:305px;
-        width:auto;
-        margin:15px 40px 15px 40px;
-        display:flex;
-
+        height: 305px;
+        width: auto;
+        margin: 15px 40px 15px 40px;
+        display: flex;
+        justify-content: space-between;
     }
     .merger {
         position:relative;
         width:310px;
         height:305px;
         background-image: url(./images/ssc2017-14a1.jpg);
-        background-size: 200%;
         background-repeat: no-repeat;
         background-position-x: -120px;
     }
     .merger-mask {
         position: absolute;
-        width:310px;
-        height:45px;
-        bottom:0px;
-        background-color: rgb(223, 208, 208);
-        opacity: 0.9;
+        height: 45px;
     }
     .merger-mask:before {
         position:absolute;
@@ -263,24 +261,176 @@
     }
     .asteroids {
         position:relative;
-        width:620px;
+        width:710px;
         height:305px;
         background-image: url(./images/pia22556-16.gif);
-        padding-left: 15px;
     }
     .asteroids-mask {
         position: absolute;
-        width:610px;
-        height:45px;
-        bottom:0px;
-        background-color: rgb(223, 208, 208);
-        opacity: 0.9;
+        height: 45px;
+    }
+    .asteroids-mask:before {
+        position:absolute;
+        content:"Asteroids";
+        width:90px;
+        height:30px;
+        padding-left:10px;
+        padding-top:5px;
+        background-color:  rgb(88,112,157);
+        color:white;
+        top:-35px;
     }
     .starvideo {
-        width:500px;
+        width:375px;
         height:305px;
-        background-color: yellow;
-        margin-left: 15px;
+    }
+    .pic-all {
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .bottom-box {
+        height:305px;
+        width:auto;
+        margin:0px 40px 35px 40px;
+        display:flex;
+        justify-content: space-between;
+    }
+    .about-nasa {
+        position: relative;
+        height:305px;
+        width:308px;
+        background-image: url(./images/nasa_logo.png);
+        background-color: rgb(34,34,34);
+    }
+    .about-nasa-mask {
+        position: absolute;
+        height: 60px;
+    }
+    .about-nasa-mask:before {
+        position: absolute;
+        content:"About NASA";
+        width: 110px;
+        height: 30px;
+        background-color: rgb(88,112,157);
+        color: white;
+        padding-left: 10px;
+        padding-top: 5px;
+        top: -35px;
+        left: 0px;
+    }
+    .juno {
+        position: relative;
+        width:345px;
+        height:305px;
+        background-image: url(./images/io-home.gif);
+    }
+    .juno-mask {
+        position: absolute;
+        height: 60px;
+    }
+    .juno-mask:before {
+        position: absolute;
+        content:"Juno";
+        width: 50px;
+        height: 30px;
+        background-color: rgb(88,112,157);
+        color: white;
+        padding-left: 10px;
+        padding-top: 5px;
+        top: -35px;
+        left: 0px;
+    }
+    .cassini {
+        position: relative;
+        width:345px;
+        height:305px;
+        background-image: url(./images/cassini20170809.jpg);
+    }
+    .cassini-mask {
+        position: absolute;
+        height: 60px;
+    }
+    .cassini-mask:before {
+        position: absolute;
+        content:"Cassini";
+        width: 70px;
+        height: 30px;
+        background-color: rgb(88,112,157);
+        color: white;
+        padding-left: 10px;
+        padding-top: 5px;
+        top: -35px;
+        left: 0px;
+    }
+    .space {
+        position: relative;
+        width:375px;
+        height:305px;
+        background-image: url(./images/fermiicecube_as.jpg);
+    }
+    .space-mask {
+        position: absolute;
+        height: 60px;
+    }
+    .space-mask:before {
+        position: absolute;
+        content:"Ferml Space Telescope";
+        width: 190px;
+        height: 30px;
+        background-color: rgb(88,112,157);
+        color: white;
+        padding-left: 10px;
+        padding-top: 5px;
+        top: -35px;
+        left: 0px;
+    }
+    .more-btn {
+        width: auto;
+        height: 40px;
+        margin: 0px 40px 40px 40px;
+        background-color: rgb(29,66,136);
+        text-align: center;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 40px;
+    }
+    .corner {
+        width: auto;
+        height: 60px;
+        margin: 0px 40px 0px 40px;
+        display: flex;
+    }
+    .corner-logo {
+        width: 60px;
+        height: 60px;
+        background-image: url(./images/nasa_logo.png);
+        background-size: 100% 100%;
+    }
+    .corner-des {
+        width:400px;
+        height:50px;
+        padding-left: 15px;
+    }
+    .corner-des p {
+        margin: 0;
+        color: white;
+        font-size: 13px;
+    }
+    .corner-list {
+        position: relative;
+        width: auto;
+        height: 80px;
+    }
+    .corner-list table {
+        position: absolute;
+        width: 1000px;
+        right: 0;
+        margin: 0px 10px 0px 0px;
+        font-size: 13px;
+    }
+    .corner-list table a {
+        color: rgb(99,123,168);
+        font-weight: 600;
     }
     </style>
 </head>
@@ -328,14 +478,14 @@
     </div>
     <div class="photolist">
         <div class="dawn">
-            <div class="dawn-mask">
-                <p class="description">Dusk for Dawn:Mission of Mary Firsts to Gather More Data in Home Stretch</p>
+            <div class="dawn-mask allmask">
+                <p class="description description-all">Dusk for Dawn:Mission of Mary Firsts to Gather More Data in Home Stretch</p>
             </div>
         </div>
         <div class="photolist-right">
             <div class="right-top">
                 <div class="climate">
-                    <div class="climate-mask">
+                    <div class="climate-mask allmask">
                         <p class="description2">A Scientist's Final Paper Looks Toward Earth's Future Climate</p>
                     </div>
                 </div>
@@ -357,26 +507,71 @@
                 </div>
             </div>
             <div class="right-down">
-                <div class="right-down-mask">
-                    <p class="description3">July 16，1969：Liftoff of Apollo 11</p>
+                <div class="right-down-mask allmask">
+                    <p class="description-all">July 16，1969：Liftoff of Apollo 11</p>
                 </div>
             </div>
         </div>
     </div>
     <div class="stars">
         <div class="merger">
-            <div class="merger-mask">
-                <p>A Merger of Stars</p>
+            <div class="merger-mask allmask">
+                <p class="description-all">A Merger of Stars</p>
             </div>
         </div>
         <div class="asteroids">
-            <div class="asteroids-mask">
-                <p>A Merger of Stars</p>
+            <div class="asteroids-mask allmask">
+                <p class="description-all">Observatories Team up to Reveal Rare Double Asteriod</p>
             </div>
         </div>
         <div class="starvideo">
-            <iframe height=305 width=487 src='http://player.youku.com/embed/XNDM1Nzk5MjU4OA==' frameborder=0 allowfullscreen></iframe>
+            <iframe height="305" width="370" frameborder="0" allowfullscreen="true" autoPlay=true src='http://player.youku.com/embed/XNDM1Nzk5MjU4OA==?rel=0&amp$autoplay=1'></iframe>
         </div>
+    </div>
+    <div class="bottom-box">
+        <div class="about-nasa">
+            <div class="about-nasa-mask allmask">
+                <p class="description-all">NASA Statement on Nomination for Agency Deputy Administrator</p>
+            </div>
+        </div>
+        <div class="juno pic-all">
+            <div class="juno-mask allmask">
+                <p class="description-all">NASA Juno Data Indicate Another Possible Volcanno on Jupiter Moon Io</p>
+            </div>
+        </div>
+        <div class="cassini pic-all">
+            <div class="cassini-mask allmask">
+                <p class="description-all">NASA Cassini Coverage Lands an Emmy Nomination</p>
+            </div>
+        </div>
+        <div class="space pic-all">
+            <div class="space-mask allmask">
+                <p class="description-all">NASA's Fermi Traces Source of Cosmic Neutrino to Monster Black Hole</p>
+            </div>
+        </div>
+    </div>
+    <div class="more-btn">
+        <a href="#">MORE STORIES</a>
+    </div>
+    <div class="corner">
+        <div class="corner-logo"></div>
+        <div class="corner-des">
+            <p>National Aeronautics and Space Administration</p>
+            <p>NASA Official: Brian Dunbar</p>
+        </div>
+    </div>
+    <div class="corner-list">
+        <table>
+            <tr>
+                <td><a href="#">No Fear Act</a></td>
+                <td><a href="#">FOIA</a></td>
+                <td><a href="#">Privacy</a></td>
+                <td><a href="#">Office of Inspector General</a></td>
+                <td><a href="#"> Office of Special Counsel</a></td>
+                <td><a href="#">Agency Financial Reports</a></td>
+                <td><a href="#">Contact NASA</a></td>
+            </tr>
+        </table>
     </div>
 </body>
 </html>
