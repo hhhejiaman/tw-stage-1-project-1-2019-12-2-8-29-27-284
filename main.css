@@ -16,7 +16,7 @@ a {
     text-decoration: none;
     color:white;
 }
-.top {
+.header-box {
     height: 152px;
     width: auto;
     display: flex;
@@ -70,7 +70,7 @@ a {
     height: 152px;
     width: 1000px;
 }
-.menutop {
+.menu-top {
     height: 80px;
     width: 860px;
     padding-top: 10px;
@@ -90,7 +90,7 @@ a {
 .menutop-table td:last-child {
     border-right: none;
 }
-.menudown{
+.menu-down{
     background-color: rgb(85,85,85);
     width: 1000px;
     height: 50px;
@@ -224,7 +224,7 @@ a {
     position: absolute;
     height: 45px;
 }
-.stars {
+.event-news {
     height: 305px;
     width: 1435px;
     margin: 15px 40px 15px 40px;
